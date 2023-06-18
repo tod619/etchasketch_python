@@ -11,8 +11,20 @@ def move_forwards():
     tim.forward(10)
 
 
+def move_backwards():
+    tim.backward(10)
+
+
+def turn_left():
+    tim.left(90)
+
+
+def turn_right():
+    tim.right(90)
+
+
 screen.listen()
-screen.onkey(key="space", fun=move_forwards)
+screen.onkey(key="space", fun=turn_left)
 
 
 screen.exitonclick()
