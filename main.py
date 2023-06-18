@@ -16,11 +16,13 @@ def move_backwards():
 
 
 def turn_left():
-    tim.left(90)
+    new_heading = tim.heading() + 10
+    tim.setheading(new_heading)
 
 
 def turn_right():
-    tim.right(90)
+    new_heading = tim.heading() - 10
+    tim.setheading(new_heading)
 
 
 screen.listen()
